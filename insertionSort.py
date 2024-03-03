@@ -1,4 +1,5 @@
-
+# import time
+# import random
 print("Ini adalah program sederhana untuk mengurutkan bilangan ascending")
 print("Masukkan bilangan bulat ya bro, ketik 'stop' untuk berhenti")
 
@@ -10,6 +11,9 @@ while True:
         data.append(int(inputData))
     else:
         break
+
+# for _ in range(100000):
+#     data.append(random.randint(1, 100))
 
 
 # ini adalah fungsi insertion sort
@@ -25,3 +29,8 @@ def insertionSorting(data):
 print("data sebelum diurutkan", data)
 urut = insertionSorting(data)
 print("data setelah diurutkan", urut)
+# mulai = time.time()
+# urut = insertionSorting(data)
+# selesai = time.time() - mulai
+# print("data setelah diurutkan", urut)
+# print(f"durasi mengurutkan {selesai:.10e}")
